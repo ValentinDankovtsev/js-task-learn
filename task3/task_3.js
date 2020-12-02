@@ -3,7 +3,7 @@
 
 const getSum = (number) => {
   let sum = 0;
-  for (i = 50; i <= number; i++) {
+  for (let i = 50; i <= number; i++) {
     sum += i;
   }
   return sum;
