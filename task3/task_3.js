@@ -46,7 +46,6 @@ const getInputNumber = () => {
   return averageOddNumbers(inputNumber);
 };
 
-
 console.log(getInputNumber());
 
 module.exports = {

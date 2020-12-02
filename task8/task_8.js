@@ -29,21 +29,19 @@ function getMinutesPassedInCurrentDay() {
 }
 getMinutesPassedInCurrentDay();
 
-
 // 3.*В двух переменных хранятся даты рождения двух
 // пользователей в формате ДД.ММ.ГГГГ. Написать
 // программу, которая определяет более молодого
 // пользователя.
 
-let from = '08.19.2012'.split('/');
-let to = '08.12.2013'.split('/');
+const from = '08.19.2012'.split('/');
+const to = '08.12.2013'.split('/');
 
-function isFromBiggerThanTo(from, to){
-   if (new Date(from).getTime() >=  new Date(to).getTime()) {
-   return new Date(from);
-   } else {
- return new Date(to);
-   } ;
+function isFromBiggerThanTo(from, to) {
+  if (new Date(from).getTime() >= new Date(to).getTime()) {
+    return new Date(from);
+  }
+  return new Date(to);
 }
 console.log(isFromBiggerThanTo(from, to));
 
@@ -51,5 +49,5 @@ module.exports = {
   getValueDate,
   getWeekDay,
   isFromBiggerThanTo,
-  getMinutesPassedInCurrentDay
+  getMinutesPassedInCurrentDay,
 };

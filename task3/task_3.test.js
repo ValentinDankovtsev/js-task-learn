@@ -1,4 +1,4 @@
-const { getSum,  averageOddNumbers } = require('./task_3');  
+const { getSum, averageOddNumbers } = require('./task_3');
 // getTubleMulOfSeven , не понял,как протестить?
 
 describe('tests of getSum', () => {

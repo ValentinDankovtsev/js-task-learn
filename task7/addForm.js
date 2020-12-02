@@ -13,32 +13,31 @@
  * @param {HTMLElement} el
  */
 export function addForm(el) {
-    //el = document.createElement('div');
-    let input = document.createElement("input");
-    let button = document.createElement("button");
-    button.innerHTML = "add";
-    button.addEventListener("click", () => {
-      let p = document.createElement("p");
-      el.appendChild(p);
-      p.innerHTML = input.value;
-      input.value = "";
+  // el = document.createElement('div');
+  const input = document.createElement('input');
+  const button = document.createElement('button');
+  button.innerHTML = 'add';
+  button.addEventListener('click', () => {
+    const p = document.createElement('p');
+    el.appendChild(p);
+    p.innerHTML = input.value;
+    input.value = '';
+    el.removeChild(button);
+    if (el.querySelectorAll('p').length > 4) {
+      el.removeChild(el.querySelectorAll('p')[0]);
+    }
+  });
+
+  el.appendChild(document.createElement('p'));
+  el.appendChild(document.createElement('p'));
+  el.appendChild(document.createElement('p'));
+  el.appendChild(input);
+
+  input.addEventListener('keyup', () => {
+    if (input.value !== '') {
+      el.appendChild(button);
+    } else {
       el.removeChild(button);
-      if (el.querySelectorAll("p").length > 4) {
-        el.removeChild(el.querySelectorAll("p")[0]);
-      }
-    });
-  
-    el.appendChild(document.createElement("p"));
-    el.appendChild(document.createElement("p"));
-    el.appendChild(document.createElement("p"));
-    el.appendChild(input);
-  
-    input.addEventListener("keyup", () => {
-      if (input.value !== "") {
-        el.appendChild(button);
-      } else {
-        el.removeChild(button);
-      }
-    });
-  }
-  
+    }
+  });
+}
