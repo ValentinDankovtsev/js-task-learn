@@ -31,14 +31,14 @@
     "jest": "^26.6.3",
     "prettier": "^2.2.1"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.js": "eslint --cache --fix",
-    "*.{css,md,yml,html}": "prettier --write"
-  }
+  // "husky": {
+  //   "hooks": {
+  //     "pre-commit": "lint-staged"
+  //   }
+  // },
+  // "lint-staged": {
+  //   "*.js": "eslint --cache --fix",
+  //   "*.{css,md,yml,html}": "prettier --write"
+  // }
 }
 
