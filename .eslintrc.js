@@ -18,6 +18,8 @@ module.exports = {
     'no-console': 'off',
     'linebreak-style': 'off',
     'no-restricted-syntax': 'off',
+    'no-alert': 'off',
+    'no-shadow': 'off',
   },
   plugins: ['jest'],
 };

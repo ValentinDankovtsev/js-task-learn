@@ -23,7 +23,7 @@ const getInputValue = () => {
 };
 
 const isValidateInputValue = (inputNumber) => {
-  const isValidValue = inputNumber === '' || +inputNumber != NaN || inputNumber.length != 3;
+  const isValidValue = inputNumber === '' || Number.isNaN(inputNumber) || inputNumber.length !== 3;
   if (!isValidValue) {
     getInputValue();
   }
