@@ -12,54 +12,42 @@ console.log(maxNumber());
 // Задание 2.Запросить у пользователя ввод числа от 1 до 12.
 // // Вывести в консоль название месяца, соответствующее
 // // этому числу (1 — январь, 2 — февраль и т.д.).
+const getmonthNumber = (inputNumber) => {
+  switch (inputNumber) {
+    case 1:
+      return 'Январь';
+    case 2:
+      return 'Февраль';
+    case 3:
+      return 'Март';
+    case 4:
+      return 'Апрель';
+    case 5:
+      return 'Май';
+    case 6:
+      return 'Июнь';
+    case 7:
+      return 'Июль';
+    case 8:
+      return 'Август';
+    case 9:
+      return 'Сентябрь';
+    case 10:
+      return 'Октябрь';
+    case 11:
+      return 'Ноябрь';
+    case 12:
+      return 'Декабрь';
+    default:
+      return 'Нет таких значений';
+  }
+};
 
 const getInputValue = () => {
   const inputNumber = +prompt('Введите любое число от 1 до 12');
   return getmonthNumber(inputNumber);
 };
 
-const getmonthNumber = (inputNumber) => {
-  switch (inputNumber) {
-    case 1:
-      return 'Январь';
-      break;
-    case 2:
-      return 'Февраль';
-      break;
-    case 3:
-      return 'Март';
-      break;
-    case 4:
-      return 'Апрель';
-      break;
-    case 5:
-      return 'Май';
-      break;
-    case 6:
-      return 'Июнь';
-      break;
-    case 7:
-      return 'Июль';
-      break;
-    case 8:
-      return 'Август';
-      break;
-    case 9:
-      return 'Сентябрь';
-      break;
-    case 10:
-      return 'Октябрь';
-      break;
-    case 11:
-      return 'Ноябрь';
-      break;
-    case 12:
-      return 'Декабрь';
-      break;
-    default:
-      return 'Нет таких значений';
-  }
-};
 console.log(getInputValue());
 
 // Задание 3.

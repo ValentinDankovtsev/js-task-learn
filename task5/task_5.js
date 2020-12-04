@@ -31,9 +31,6 @@ console.log(newArray);
 // 3.*Найдите и выведите в консоль наибольший и
 // // наименьший элементы исходного массива.
 
-const max = getMaxValue(arr);
-const min = getMinValue(arr);
-
 // получение максимального элемента массива
 function getMaxValue(arr) {
   let max = arr[0]; // берем первый элемент массива
@@ -52,8 +49,9 @@ function getMinValue(arr) {
   }
   return min;
 }
-
-console.log(max, min);
+const maxNum = getMaxValue(arr);
+const minNum = getMinValue(arr);
+console.log(maxNum, minNum);
 
 module.exports = {
   sumArr,

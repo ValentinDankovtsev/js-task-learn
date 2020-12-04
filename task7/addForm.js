@@ -12,7 +12,7 @@
 /**
  * @param {HTMLElement} el
  */
-export function addForm(el) {
+function addForm(el) {
   // el = document.createElement('div');
   const input = document.createElement('input');
   const button = document.createElement('button');
@@ -41,3 +41,6 @@ export function addForm(el) {
     }
   });
 }
+module.exports = {
+  addForm,
+};

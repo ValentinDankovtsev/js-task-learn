@@ -44,10 +44,3 @@ function isFromBiggerThanTo(from, to) {
   return new Date(to);
 }
 console.log(isFromBiggerThanTo(from, to));
-
-module.exports = {
-  getValueDate,
-  getWeekDay,
-  isFromBiggerThanTo,
-  getMinutesPassedInCurrentDay,
-};

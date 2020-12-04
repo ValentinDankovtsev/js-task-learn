@@ -1,4 +1,4 @@
-import { addForm } from './addForm';
+const { addForm } = require('./addForm.js');
 
 describe('addForm', () => {
   let el;

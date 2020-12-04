@@ -14,11 +14,14 @@ isTriangle(3, 3, 18);
 // площадь круга с радиусом R.
 
 // const getInputValue = () => {
-//     const radius = +prompt('Введите R');
-//     let length = 2 * Math.PI * radius;
-//     let square = Math.PI * radius ** 2;
-//     const result = {length , square};
-//     return result
+//   const radius = +prompt('Введите R');
+//   const length = 2 * Math.PI * radius;
+//   const square = Math.PI * radius ** 2;
+//   const result = {
+//     length,
+//     square,
+//   };
+//   return result;
 // };
 
 // getInputValue();
@@ -31,32 +34,32 @@ isTriangle(3, 3, 18);
 // // // Выражение D = b 2 − 4 a c называется дискриминантом квадратного уравнения. ∙ если , то оно не имеет корней.
 
 // const getInputValues = () => {
-//     const inputValue = prompt('введите три числа abc: ');
-//     const arr = inputValue.split(',');
-//     return arr;
+//   const inputValue = prompt('введите три числа abc: ');
+//   const arr = inputValue.split(',');
+//   return arr;
 // };
 
 // function guad(arr) {
-//     const [a, b, c] = arr;
-//     if (a === 0) return "ошибка";
-//     let D = b * b - 4 * a * c;
-//     let x1;
-//     let x2;
-//     if (D > 0) {
-//         x1 = (-b + Math.sqrt(D)) / (2 * a);
-//         x2 = (-b - Math.sqrt(D)) / (2 * a);
-//         const result = {
-//             x1,
-//             x2
-//         };
-//         return result;
-//     } else if (D === 0) {
-//         x1 = -b / (2 * a);
-//         return x1;
-//     } else if (D < 0) {
-//         return D;
-//     }
-// };
+//   const [a, b, c] = arr;
+//   if (a === 0) return 'ошибка';
+//   const D = b * b - 4 * a * c;
+//   let x1;
+//   let x2;
+//   if (D > 0) {
+//     x1 = (-b + Math.sqrt(D)) / (2 * a);
+//     x2 = (-b - Math.sqrt(D)) / (2 * a);
+//     const result = {
+//       x1,
+//       x2,
+//     };
+//     return result;
+//   } if (D === 0) {
+//     x1 = -b / (2 * a);
+//     return x1;
+//   } if (D < 0) {
+//     return D;
+//   }
+// }
 
 // guad(getInputValues());
 

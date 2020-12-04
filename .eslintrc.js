@@ -6,17 +6,18 @@ module.exports = {
   },
   extends: [
     'airbnb-base',
-    'prettier',
   ],
   parserOptions: {
     ecmaVersion: 12,
     sourceType: 'module',
   },
   rules: {
-    'import/prefer-default-export': 'off',
-    'max-len': ['error', {
-      ignoreComments: true
-    }],
+    'no-plusplus': 'off',
+    'max-len': ['error', { code: 400, ignoreComments: true }],
+    'no-restricted-globals': 'off',
+    'no-console': 'off',
+    'linebreak-style': 'off',
+    'no-restricted-syntax': 'off',
   },
   plugins: ['jest'],
 };

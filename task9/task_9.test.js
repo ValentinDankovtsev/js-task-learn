@@ -8,18 +8,3 @@ describe('isTriangle', () => {
     expect(isTriangle(2, 2, 10)).toBe(false);
   });
 });
-
-// describe('getInputValue', () => {
-//     test('getInputValue is a true', () => {
-//         // const MockValue = 5;
-//       expect(getInputValue()).toBe();
-//     });
-
-// });
-
-// describe('guard', () => {
-//     test('guard is true', () => {
-//         const MockValue = ['1','2','3']
-//       expect(guard(MockValue)).toBe(-8);
-//     });
-// });

@@ -41,7 +41,7 @@ const getStringTnumber = () => {
   return stringTnumber;
 };
 const isStringTnumber = (stringTnumber) => {
-  const pattern = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/;
+  const pattern = /^((8|\+7)[ \- ]?)?(\(?\d{3}\)?[ \- ]?)?[\d\- ]{7,10}$/;
   if (pattern.test(stringTnumber)) {
     return true;
   }
