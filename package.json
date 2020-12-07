@@ -41,7 +41,7 @@
       "prettier --write",
       "eslint --cache --fix"
     ],
-    "*.{js,css,md,yml,html}": "prettier --write"
+    "*.{css,md,yml,html}": "prettier --write"
   },
   "dependencies": {
     "@babel/core": "^7.12.9",
