@@ -8,8 +8,6 @@ function diff(a, b) {
   }
   return b - a;
 }
-const sub = diff(1, 4);
-console.log(sub);
 
 // Задание 2.
 //  Напишите функцию isWord, которая принимает на
@@ -18,12 +16,11 @@ console.log(sub);
 // нескольких.
 
 function isWord(str) {
-  if (str.includes(' ')) {
+  if (str.includes(" ")) {
     return false;
   }
   return true;
 }
-const str = 'Практика,isWord ';
 
 // Задание 3
 // *Напишите функцию pow(a, x), которая вернёт
@@ -36,7 +33,6 @@ function pow(a, x) {
 
   return result;
 }
-console.log(pow(2, 4));
 
 module.exports = {
   diff,

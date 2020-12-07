@@ -7,7 +7,9 @@
 
 // 1.
 const getStringDate = () => {
-  const stringDate = prompt('Ввведите строку в формате dd/mm/yyyy, dd-mm-yyyy, или dd.mm.yyyy');
+  const stringDate = prompt(
+    "Ввведите строку в формате dd/mm/yyyy, dd-mm-yyyy, или dd.mm.yyyy"
+  );
   return stringDate;
 };
 
@@ -18,11 +20,10 @@ const isStringToDate = (stringDate) => {
   }
   return false;
 };
-isStringToDate(getStringDate());
 
 // 2.
 const getStringMail = () => {
-  const stringMail = prompt('Ввведите адрес электронной почты');
+  const stringMail = prompt("Ввведите адрес электронной почты");
   return stringMail;
 };
 
@@ -33,11 +34,10 @@ const isStringToMail = (stringMail) => {
   }
   return false;
 };
-isStringToMail(getStringMail());
 
 // 3.
 const getStringTnumber = () => {
-  const stringTnumber = prompt('Ввведите номер телефона');
+  const stringTnumber = prompt("Ввведите номер телефона");
   return stringTnumber;
 };
 const isStringTnumber = (stringTnumber) => {
@@ -47,10 +47,12 @@ const isStringTnumber = (stringTnumber) => {
   }
   return false;
 };
-isStringTnumber(getStringTnumber());
 
 module.exports = {
   isStringToDate,
   isStringToMail,
   isStringTnumber,
+  getStringDate,
+  getStringMail,
+  getStringTnumber,
 };

@@ -6,9 +6,9 @@ const getSum = (number) => {
   for (let i = 50; i <= number; i++) {
     sum += i;
   }
-  return sum;
+  return console.log(sum);
 };
-console.log(getSum(100));
+// console.log(getSum(100));
 
 // Задание 2.Вывести в консоль таблицу умножения на 7.
 // 7 x 1 = 7
@@ -16,14 +16,11 @@ console.log(getSum(100));
 // …
 // 7 x 9 = 63
 
-const getTubleMulOfSeven = (x) => {
-  let tableBody = '';
+const getTubleMulOfSeven = () => {
   for (let i = 1; i < 10; i++) {
-    tableBody += `${x}*${i}=${x * i}\n`;
+    console.log(`7 x ${i} = ${7 * i}`);
   }
-  return tableBody;
 };
-console.log(getTubleMulOfSeven(7));
 
 // Задание 3
 // Запросить у пользователя ввод числа N. Вывести в
@@ -38,17 +35,16 @@ const averageOddNumbers = (inputNumber) => {
     oddCount++;
     average = sum / oddCount++;
   }
-  return average;
+  return console.log(average);
 };
 
 const getInputNumber = () => {
-  const inputNumber = +prompt('Ввведите число N');
+  const inputNumber = Number(prompt("Ввведите число N"));
   return averageOddNumbers(inputNumber);
 };
 
-console.log(getInputNumber());
-
 module.exports = {
   getSum,
-  averageOddNumbers,
+  getTubleMulOfSeven,
+  getInputNumber,
 };

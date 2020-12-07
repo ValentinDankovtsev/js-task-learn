@@ -3,17 +3,16 @@
 // недели по введённой дате.
 
 function getWeekDay(inputDate) {
-  const days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
-  return console.log(days[inputDate.getDay()]);
+  const days = ["ВС", "ПН", "ВТ", "СР", "ЧТ", "ПТ", "СБ"];
+  return days[inputDate.getDay()];
 }
 
 function getValueDate() {
-  const input = prompt('DD MM YYYY');
-  const [day, month, year] = input.split(' ');
+  const input = prompt("DD MM YYYY");
+  const [day, month, year] = input.split(" ");
   const inputDate = new Date(`${year}-${month}-${day}`);
   return getWeekDay(inputDate);
 }
-getValueDate();
 
 // 2.Написать программу, которая выводит в консоль
 // количество минут, прошедшее с начала сегодняшнего
@@ -21,21 +20,17 @@ getValueDate();
 
 function getMinutesPassedInCurrentDay() {
   const now = new Date();
-  const hours = now.getHours();
-  const min = now.getMinutes();
-  const minPass = (hours * 60) + min;
+  const hours = now.getUTCHours();
+  const min = now.getUTCMinutes();
+  const minPass = hours * 60 + min;
 
   return console.log(minPass);
 }
-getMinutesPassedInCurrentDay();
 
 // 3.*В двух переменных хранятся даты рождения двух
 // пользователей в формате ДД.ММ.ГГГГ. Написать
 // программу, которая определяет более молодого
 // пользователя.
-
-const from = '08.19.2012'.split('/');
-const to = '08.12.2013'.split('/');
 
 function isFromBiggerThanTo(from, to) {
   if (new Date(from).getTime() >= new Date(to).getTime()) {
@@ -43,4 +38,9 @@ function isFromBiggerThanTo(from, to) {
   }
   return new Date(to);
 }
-console.log(isFromBiggerThanTo(from, to));
+
+module.exports = {
+  getValueDate,
+  getMinutesPassedInCurrentDay,
+  isFromBiggerThanTo,
+};

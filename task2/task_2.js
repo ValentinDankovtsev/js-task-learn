@@ -3,11 +3,10 @@
 
 const maxNumber = (a, b) => {
   if (a > b) {
-    return a;
+    return console.log(a);
   }
-  return b;
+  return console.log(b);
 };
-console.log(maxNumber());
 
 // Задание 2.Запросить у пользователя ввод числа от 1 до 12.
 // // Вывести в консоль название месяца, соответствующее
@@ -15,40 +14,38 @@ console.log(maxNumber());
 const getmonthNumber = (inputNumber) => {
   switch (inputNumber) {
     case 1:
-      return 'Январь';
+      return "Январь";
     case 2:
-      return 'Февраль';
+      return "Февраль";
     case 3:
-      return 'Март';
+      return "Март";
     case 4:
-      return 'Апрель';
+      return "Апрель";
     case 5:
-      return 'Май';
+      return "Май";
     case 6:
-      return 'Июнь';
+      return "Июнь";
     case 7:
-      return 'Июль';
+      return "Июль";
     case 8:
-      return 'Август';
+      return "Август";
     case 9:
-      return 'Сентябрь';
+      return "Сентябрь";
     case 10:
-      return 'Октябрь';
+      return "Октябрь";
     case 11:
-      return 'Ноябрь';
+      return "Ноябрь";
     case 12:
-      return 'Декабрь';
+      return "Декабрь";
     default:
-      return 'Нет таких значений';
+      return "Нет таких значений";
   }
 };
 
 const getInputValue = () => {
-  const inputNumber = +prompt('Введите любое число от 1 до 12');
+  const inputNumber = Number(prompt("Введите любое число от 1 до 12"));
   return getmonthNumber(inputNumber);
 };
-
-console.log(getInputValue());
 
 // Задание 3.
 // В переменных circle и square хранятся площади круга
@@ -69,9 +66,9 @@ const getdiameterCircle = (circle) => 2 * Math.sqrt(circle / 3.14);
 
 const isCircleInSquare = (side, diametr) => {
   if (diametr <= side) {
-    return 'Круг уместиться в квадрате';
+    return "Круг уместиться в квадрате";
   }
-  return 'Круг не уместиться в квадрате';
+  return "Круг не уместиться в квадрате";
 };
 const side = getsideSquare(15);
 const diametr = getdiameterCircle(16);
