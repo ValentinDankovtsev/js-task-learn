@@ -10,7 +10,7 @@
  них удаляется. */
 
 /**
- * @param {HTMLElement} el
+//  * @param {HTMLElement} el
  */
 export function addForm(el) {
   // el = document.createElement('div');

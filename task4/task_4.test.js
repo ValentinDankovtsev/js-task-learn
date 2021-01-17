@@ -15,9 +15,9 @@ describe("tests of object", () => {
   test("tests typeof addAgetoUser", () => {
     const mockPrompt = jest
       .spyOn(global.window, "prompt")
-      .mockImplementation(() => 29);
+      .mockImplementation(() => "29");
     const result = addAgetoUser();
     expect(mockPrompt).toBeCalledWith("Введите значение переменной age");
-    expect(result).toEqual({ age: 29, name: "John", role: "admin" });
+    expect(result).toEqual({ age: "29", name: "John", role: "admin" });
   });
 });
